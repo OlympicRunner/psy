@@ -1,0 +1,70 @@
+/* body{background: #edf2f7;} */
+details{
+  display:block;
+  overflow:hidden;
+  border-bottom: 2px solid #708F7F;
+}
+summary::-webkit-details-marker{display:none;}
+summary::-moz-list-bullet{list-style-type:none;}
+summary::marker{display:none;} 
+summary {
+   display:block;
+   padding: 37px 0;
+   color: #1C1C1C;
+   cursor: pointer;
+   position: relative;
+   font-family: Futura PT;
+    font-size: 20px;
+    font-weight: 450;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+summary:before {  
+  top: 15px;
+  right: .3em;
+  color: transparent;
+  background: url('../img/+.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60px;
+  height: 60px;  
+  content: "";
+  position: absolute;
+  transition: transform .5s;
+}
+details[open] > summary:before {
+  transform: rotate(45deg);
+}
+summary ~ * {
+   padding: 0 1em 10px 1.4em;
+}
+/* details[open] summary ~ *{ 
+    font-family: Futura PT;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #708F7F;
+    animation: sweep .5s ease-in-out;
+} */
+@keyframes sweep {
+  0%    {opacity: 0;}
+  100%  {opacity: 1;}
+}
+summary:focus {
+  /* outline:0; */
+}
+
+details p {
+    padding-left: 60px;
+    font-family: Futura PT;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #708F7F;
+    animation: sweep .5s ease-in-out;
+}
