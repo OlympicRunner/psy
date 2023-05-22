@@ -19,7 +19,9 @@ summary {
     line-height: 26px;
     letter-spacing: 0em;
     text-align: left;
+    transition: .3s ease-in-out all;
 }
+
 summary:before {  
   top: 15px;
   right: .3em;
@@ -39,6 +41,7 @@ details[open] > summary:before {
 summary ~ * {
    padding: 0 1em 10px 1.4em;
 }
+
 /* details[open] summary ~ *{ 
     font-family: Futura PT;
     font-size: 18px;

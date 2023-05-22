@@ -43,6 +43,12 @@ a {
     width: 100%;
 }
 
+/* @media (max-width: 1300px) {
+    .container {
+        padding: 0 80px;
+    }
+} */
+
 button {
     padding: 0;
     border: none;
@@ -84,6 +90,7 @@ button {
 
 
 .header_li a { 
+    border-bottom: 2px solid #f1f1f1;
     font-family: Futura PT;
     font-size: 14px;
     font-weight: 400;
@@ -91,6 +98,11 @@ button {
     letter-spacing: 0em;
     text-align: left;
     color: #515151;
+    transition: .3s ease-in-out all;
+}
+
+.header_li a:hover{
+    border-bottom: 2px solid #708F7F;
 }
 
 .li-plus {
@@ -150,7 +162,7 @@ button {
 
 .general_btn {
     padding: 18px 20px 21px 20px;
-    border-color: white;
+    border: 2px solid white;
     color: #F1F1F1;
     border-radius: 80px;
     font-family: 'Futura PT';
@@ -160,6 +172,13 @@ button {
     line-height: 130%;
     text-align: center;
     background-color: #708F7F;
+    transition: .3s ease-in-out all;
+}
+
+.general_btn:hover {
+    background-color: #f1f1f1;
+    color: #708F7F;
+    border-color: #708F7F;
 }
 
 .general_one {
@@ -193,6 +212,59 @@ button {
     top: 496px;
     right: -140px;
     background-image: url(../img/photo-2.png);
+}
+
+.general_play {
+    content: '';
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    background-size: cover;
+    border-radius: 100px;
+    top: 500px;
+    left: -63px;
+    background-image: url(../img/btn-video.png);
+    box-shadow: 0 0 120px;
+    transition: .3s ease-in-out all;
+}
+
+
+
+.general_play:hover .play{
+    transform: scale(1.5);
+    fill: #f1f1f1;
+}
+
+.general_kolo_re {
+    position: relative;
+}
+
+.general_kolo {
+    position: absolute;
+    content: '';
+    width: 275px;
+    top: -159px;
+    right: -71px;
+    transform-origin: 50% 50%;
+    transition: all 0.5s ease;
+    animation: rotate 30s linear infinite;
+}
+
+.general_kolo_text {
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;    
+    color: black;
+}
+
+.play {
+    padding-top: 6px;
+    transform: scale(1.3);
+    padding-left: 6px;
+    transition: .3s ease-in-out all;
 }
 
 .about {
@@ -240,6 +312,13 @@ button {
     text-align: left;
     border-radius: 80px;
     border: 2px solid #708F7F;
+    transition: .3s ease-in-out all;
+}
+
+.about_btn:hover {
+    background-color: #708F7F;
+    color: white;
+    border-color: white;
 }
 
 .about_stats {
@@ -651,8 +730,14 @@ button {
     color: #1C1C1C;
     background-color: #fff;
     border-radius: 80px;
+    z-index: 100;
+    transition: .3s ease-in-out all;
 }
 
+.life_btn:hover {
+    background-color: #1c1c1c;
+    color: #f1f1f1;
+}
 
 .kolo {
     margin-bottom: 150px;
@@ -666,9 +751,12 @@ button {
 .kolo_o {
     position: absolute;
     content: '';
-    width: 720px;
-    top: -265px;
+    width: 900px;
+    top: -366px;
+    transform-origin: 50% 50%;
 }
+
+
 
 .kolo_text {
     font-family: Futura PT;
@@ -747,6 +835,7 @@ button {
 }
 
 .questions_h2 {
+    width: 50%;
     margin-bottom: 140px;
     font-family: NotoSerif;
     font-size: 64px;
@@ -825,6 +914,13 @@ button {
     letter-spacing: 0em;
     text-align: center;
     color: #f1f1f1;
+    transition: .3s ease-in-out all;
+}
+
+.social_link:hover {
+    background-color: #f1f1f1;
+    color: #708F7F;
+    border-color: none;
 }
 
 .social_mail {
@@ -834,10 +930,38 @@ button {
 
 .social_phone {
     bottom: 0;
-    right: 240px;
+    right: 244px;
 }
 
 .social_viber {
     bottom: 0;
+    right: 486px;
+}
 
+.social_telegramm {
+    bottom: 177px;
+    right: 123px;
+}
+
+.social_watsapp {
+    right: 364px;
+    bottom: 177px;
+}
+
+.social_insta {
+    bottom: 355px;
+    right: 0;
+}
+
+
+
+.kolo_o {
+    transition: all 0.5s ease;
+    animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(-360deg);
+    }
 }

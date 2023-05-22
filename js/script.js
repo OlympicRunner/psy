@@ -79,3 +79,27 @@ function accordion(event) {
 		details[i].removeAttribute("open");
 	}
 }
+
+
+// ----------------------------------Вращение текста
+
+let kolo = document.querySelector('.kolo_o')
+
+// console.log('+')
+
+// ----- временно
+
+function block (clas) {
+    let per = document.querySelector(clas)
+    per.style.display = 'none'
+    console.log(per)
+}
+block('.header')
+block('.about')
+block('.help')
+block('.section_format')
+block('.consultation')
+block('.life')
+block('.messages')
+block('.questions')
+block('.footer')
