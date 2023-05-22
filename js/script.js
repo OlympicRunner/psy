@@ -95,7 +95,8 @@ function block (clas) {
     console.log(per)
 }
 block('.header')
-block('.about')
+block('.general')
+// block('.about')
 block('.help')
 block('.section_format')
 block('.consultation')
