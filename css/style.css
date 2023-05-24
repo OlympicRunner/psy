@@ -282,6 +282,10 @@ button {
     max-width: 460px;
 }
 
+.after_951 {
+    display: none;
+}
+
 .about_h2 {
     font-family: 'NotoSerif';
     margin-bottom: 65px;
@@ -385,6 +389,7 @@ button {
     content: '';
     background-image: url(../img/photo-5.png);
     background-repeat: no-repeat;
+    background-position: center;
     /* background-size: contain; */
 }
 
