@@ -92,15 +92,4 @@ let kolo = document.querySelector('.kolo_o')
 function block (clas) {
     let per = document.querySelector(clas)
     per.style.display = 'none'
-    console.log(per)
 }
-// block('.header')
-// block('.general')
-// block('.about')
-// block('.help')
-// block('.section_format')
-// block('.consultation')
-// block('.life')
-// block('.messages')
-// block('.questions')
-// block('.footer')

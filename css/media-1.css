@@ -465,6 +465,9 @@
     .map {
         grid-auto-rows: auto 375px;
     }
+    .life_li {
+        width: 330px;
+    }
 }
     @media (max-width: 540px) {
         .general_one:after {
