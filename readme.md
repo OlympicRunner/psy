@@ -1,3 +1,3 @@
 ## Одностраничный лендинг 
 
-[ссылка](horoshiy-psiholog.com)
+ссылка: horoshiy-psiholog.com
