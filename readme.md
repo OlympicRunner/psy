@@ -1,1 +1,3 @@
-## Одностраничный [лендинг](https://horoshiy-psiholog.com)
+## Одностраничный лендинг 
+
+[ссылка](horoshiy-psiholog.com)
